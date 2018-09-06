@@ -31,7 +31,13 @@ public class LoginController {
 		modelAndView.setViewName("login");
 		return modelAndView;
 	}
-
+	
+	@RequestMapping(value={"/access-denied"}, method = RequestMethod.GET)
+	public ModelAndView accessDenied(){
+		ModelAndView modelAndView = new ModelAndView();
+		modelAndView.setViewName("access-denied");
+		return modelAndView;
+	}
 
 	@RequestMapping(value="/registration-user", method = RequestMethod.GET)
 	public ModelAndView registrationUser(){
@@ -95,10 +101,14 @@ public class LoginController {
 
 	@RequestMapping("/default")
 	public String defaultAfterLogin() {
+		log.info("default called");
+		
 		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 		UserDetails userDetails = (UserDetails) authentication.getPrincipal();
 
 		for(GrantedAuthority ga : userDetails.getAuthorities()) {
+			log.info("role in session is: " + ga.getAuthority());
+			
 			if (Constants.ROLE_ADMIN.equals(ga.getAuthority())) {
 				return "redirect:/admin/home";
 			} else if (Constants.ROLE_USER.equals(ga.getAuthority())) {
