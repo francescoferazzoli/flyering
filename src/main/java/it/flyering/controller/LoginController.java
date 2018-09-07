@@ -13,18 +13,22 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import it.flyering.dao.UserDAO;
 import it.flyering.model.User;
+import it.flyering.service.ConverterHelper;
 import it.flyering.service.UserService;
 import it.flyering.utils.Constants;
-import lombok.extern.slf4j.Slf4j;
 
 @Controller
-@Slf4j
+//@Slf4j
 public class LoginController {
 
 	@Autowired
 	private UserService userService;
-
+	
+	@Autowired
+	private ConverterHelper converterHelper;
+	
 	@RequestMapping(value={"/", "/login"}, method = RequestMethod.GET)
 	public ModelAndView login(){
 		ModelAndView modelAndView = new ModelAndView();
@@ -60,7 +64,7 @@ public class LoginController {
 	@RequestMapping(value = "/registrationAdmin", method = RequestMethod.POST)
 	public ModelAndView createNewAdmin(@Valid User user, BindingResult bindingResult) {
 		ModelAndView modelAndView = new ModelAndView();
-		User userExists = userService.findUserByEmail(user.getEmail());
+		UserDAO userExists = userService.findUserByEmail(user.getEmail());
 		if (userExists != null) {
 			bindingResult
 			.rejectValue("email", "error.user",
@@ -69,7 +73,7 @@ public class LoginController {
 		if (bindingResult.hasErrors()) {
 			modelAndView.setViewName("registration-admin");
 		} else {
-			userService.saveUser(user, Constants.ROLE_ADMIN);
+			userService.saveUser(converterHelper.convertUserToUserDAO(user), Constants.ROLE_ADMIN);
 			modelAndView.addObject("successMessage", "User has been registered successfully");
 			modelAndView.addObject("user", new User());
 			modelAndView.setViewName("registration-admin");
@@ -81,7 +85,7 @@ public class LoginController {
 	@RequestMapping(value = "/registrationUser", method = RequestMethod.POST)
 	public ModelAndView createNewUser(@Valid User user, BindingResult bindingResult) {
 		ModelAndView modelAndView = new ModelAndView();
-		User userExists = userService.findUserByEmail(user.getEmail());
+		UserDAO userExists = userService.findUserByEmail(user.getEmail());
 		if (userExists != null) {
 			bindingResult
 			.rejectValue("email", "error.user",
@@ -90,7 +94,7 @@ public class LoginController {
 		if (bindingResult.hasErrors()) {
 			modelAndView.setViewName("registration-user");
 		} else {
-			userService.saveUser(user, Constants.ROLE_USER);
+			userService.saveUser(converterHelper.convertUserToUserDAO(user), Constants.ROLE_USER);
 			modelAndView.addObject("successMessage", "User has been registered successfully");
 			modelAndView.addObject("user", new User());
 			modelAndView.setViewName("registration-user");
@@ -101,14 +105,11 @@ public class LoginController {
 
 	@RequestMapping("/default")
 	public String defaultAfterLogin() {
-		log.info("default called");
 		
 		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 		UserDetails userDetails = (UserDetails) authentication.getPrincipal();
 
 		for(GrantedAuthority ga : userDetails.getAuthorities()) {
-			log.info("role in session is: " + ga.getAuthority());
-			
 			if (Constants.ROLE_ADMIN.equals(ga.getAuthority())) {
 				return "redirect:/admin/home";
 			} else if (Constants.ROLE_USER.equals(ga.getAuthority())) {
