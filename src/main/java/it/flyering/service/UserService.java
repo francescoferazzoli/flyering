@@ -35,5 +35,9 @@ public class UserService {
         user.setRoles(new HashSet<RoleDAO>(Arrays.asList(userRole)));
 		userRepository.save(user);
 	}
-
+	
+	public void updatePassword(UserDAO user) {
+		user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
+		userRepository.save(user);
+	}
 }

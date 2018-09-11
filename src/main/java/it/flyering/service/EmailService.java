@@ -3,6 +3,7 @@ package it.flyering.service;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 import freemarker.template.TemplateException;
+import it.flyering.dao.UserDAO;
 import it.flyering.model.Mail;
 import it.flyering.model.User;
 import it.flyering.utils.Constants;
@@ -54,6 +55,20 @@ public class EmailService {
 		mail.setModel(model);
 		
 		sendSimpleMessage(mail, "client-email-template.ftl");
+	}
+	
+	public void sendResetPassword(UserDAO user) throws MessagingException, IOException, TemplateException {
+		Mail mail = new Mail();
+		mail.setFrom("noreply@liberty-it.co.uk");
+		mail.setTo(user.getEmail());
+		mail.setSubject("Reset Password");
+
+		Map<String, Object> model = new HashMap<>();
+		model.put("name", user.getName());
+		model.put("password", user.getPassword());
+		mail.setModel(model);
+		
+		sendSimpleMessage(mail, "reset-password-email-template.ftl");
 	}
 
 	private void sendSimpleMessage(final Mail mail, final String template) throws MessagingException, IOException,

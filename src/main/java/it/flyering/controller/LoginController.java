@@ -5,6 +5,7 @@ import java.io.IOException;
 import javax.mail.MessagingException;
 import javax.validation.Valid;
 
+import org.apache.commons.lang.RandomStringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
@@ -18,11 +19,13 @@ import org.springframework.web.servlet.ModelAndView;
 
 import freemarker.template.TemplateException;
 import it.flyering.dao.UserDAO;
+import it.flyering.model.ResetEmail;
 import it.flyering.model.User;
 import it.flyering.service.ConverterHelper;
 import it.flyering.service.EmailService;
 import it.flyering.service.UserService;
 import it.flyering.utils.Constants;
+//import lombok.extern.slf4j.Slf4j;
 
 @Controller
 //@Slf4j
@@ -125,5 +128,36 @@ public class LoginController {
 			}
 		}
 		return "redirect:/";
+	}
+	
+	@RequestMapping(value="/reset-password", method = RequestMethod.GET)
+	public ModelAndView resetPasswordPage(){
+		ModelAndView modelAndView = new ModelAndView();
+		modelAndView.addObject("resetEmail", new ResetEmail());
+		modelAndView.setViewName("reset-password");
+		return modelAndView;
+	}
+	
+	@RequestMapping(value = "/resetPassword", method = RequestMethod.POST)
+	public ModelAndView resetPasswordAction(@Valid ResetEmail resetEmail, BindingResult bindingResult) throws MessagingException, IOException, TemplateException {
+		ModelAndView modelAndView = new ModelAndView();
+		UserDAO userExists = userService.findUserByEmail(resetEmail.getEmail());
+		if (userExists == null) {
+			bindingResult
+			.rejectValue("email", "error.user",
+					"There is not an user registered with the email provided");
+			modelAndView.setViewName("reset-password");
+		}
+		else {
+			String generatedPassword = RandomStringUtils.randomAlphabetic(10);
+			userExists.setPassword(generatedPassword);
+			emailService.sendResetPassword(userExists);
+			userService.updatePassword(userExists);
+			
+			modelAndView.addObject("successMessage", "Password reset successfully");
+			modelAndView.addObject("resetEmail", new ResetEmail());
+			modelAndView.setViewName("reset-password");
+		}
+		return modelAndView;
 	}
 }
