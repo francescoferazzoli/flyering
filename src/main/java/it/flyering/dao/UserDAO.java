@@ -21,7 +21,6 @@ import lombok.ToString;
 @Entity
 @Table(name = "users")
 @Data
-@ToString
 public class UserDAO {
 
 	@Id

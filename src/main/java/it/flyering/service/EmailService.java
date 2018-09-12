@@ -70,6 +70,19 @@ public class EmailService {
 		
 		sendSimpleMessage(mail, "reset-password-email-template.ftl");
 	}
+	
+	public void sendChangePassword(UserDAO user) throws MessagingException, IOException, TemplateException {
+		Mail mail = new Mail();
+		mail.setFrom("noreply@liberty-it.co.uk");
+		mail.setTo(user.getEmail());
+		mail.setSubject("Change Password");
+
+		Map<String, Object> model = new HashMap<>();
+		model.put("name", user.getName());
+		mail.setModel(model);
+		
+		sendSimpleMessage(mail, "change-password-email-template.ftl");
+	}
 
 	private void sendSimpleMessage(final Mail mail, final String template) throws MessagingException, IOException,
 	TemplateException {

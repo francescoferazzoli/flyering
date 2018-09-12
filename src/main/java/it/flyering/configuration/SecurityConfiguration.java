@@ -51,10 +51,16 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 		.antMatchers("/login").permitAll()
 		.antMatchers("/registration-user").permitAll()
 		.antMatchers("/registration-admin").permitAll()
+		
 		.antMatchers("/registrationUser").permitAll()
 		.antMatchers("/registrationAdmin").permitAll()
+		
 		.antMatchers("/reset-password").permitAll()
 		.antMatchers("/resetPassword").permitAll()
+		
+		.antMatchers("/change-password").permitAll()
+		.antMatchers("/changePassword").permitAll()
+		
 		.antMatchers("/admin/**").access("hasRole('"+ Constants.ROLE_ADMIN +"') or hasRole('"+ Constants.ROLE_USER +"')")
 		.antMatchers("/admin/**").hasAuthority(Constants.ROLE_ADMIN)
 		.anyRequest().authenticated().and().csrf().disable().formLogin()
