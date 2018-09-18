@@ -5756,259 +5756,259 @@ VALUES
     'VI', '0444', 'M401', 33.49, 6438
   ), 
   (
-    25001, 'Agordo', 'Veneto', 'Bl', '0437', 
+    25001, 'Agordo', 'Veneto', 'BL', '0437', 
     'A083', 23.67, 4225
   ), 
   (
     25002, 'Alano di Piave', 'Veneto', 
-    'Bl', '0439', 'A121', 36.51, 2881
+    'BL', '0439', 'A121', 36.51, 2881
   ), 
   (
-    25003, 'Alleghe', 'Veneto', 'Bl', '0437', 
+    25003, 'Alleghe', 'Veneto', 'BL', '0437', 
     'A206', 29.79, 1276
   ), 
   (
-    25004, 'Arsiè', 'Veneto', 'Bl', '0439', 
+    25004, 'Arsiè', 'Veneto', 'BL', '0439', 
     'A443', 64.96, 2441
   ), 
   (
     25005, 'Auronzo di Cadore', 'Veneto', 
-    'Bl', '0435', 'A501', 220.71, 3416
+    'BL', '0435', 'A501', 220.71, 3416
   ), 
   (
-    25006, 'Belluno', 'Veneto', 'Bl', '0437', 
+    25006, 'Belluno', 'Veneto', 'BL', '0437', 
     'A757', 147.18, 35545
   ), 
   (
     25007, 'Borca di Cadore', 'Veneto', 
-    'Bl', '0435', 'A982', 26.98, 793
+    'BL', '0435', 'A982', 26.98, 793
   ), 
   (
     25008, 'Calalzo di Cadore', 'Veneto', 
-    'Bl', '0435', 'B375', 43.38, 2131
+    'BL', '0435', 'B375', 43.38, 2131
   ), 
   (
     25010, 'Cencenighe Agordino', 'Veneto', 
-    'Bl', '0437', 'C458', 18.03, 1375
+    'BL', '0437', 'C458', 18.03, 1375
   ), 
   (
     25011, 'Cesiomaggiore', 'Veneto', 
-    'Bl', '0439', 'C577', 82.17, 4120
+    'BL', '0439', 'C577', 82.17, 4120
   ), 
   (
     25012, 'Chies d''Alpago', 'Veneto', 
-    'Bl', '0437', 'C630', 44.84, 1412
+    'BL', '0437', 'C630', 44.84, 1412
   ), 
   (
     25013, 'Cibiana di Cadore', 'Veneto', 
-    'Bl', '0435', 'C672', 21.63, 422
+    'BL', '0435', 'C672', 21.63, 422
   ), 
   (
     25014, 'Colle Santa Lucia', 'Veneto', 
-    'Bl', '0437', 'C872', 15.23, 388
+    'BL', '0437', 'C872', 15.23, 388
   ), 
   (
     25015, 'Comelico Superiore', 'Veneto', 
-    'Bl', '0435', 'C920', 95.85, 2287
+    'BL', '0435', 'C920', 95.85, 2287
   ), 
   (
     25016, 'Cortina d''Ampezzo', 'Veneto', 
-    'Bl', '0436', 'A266', 254.51, 5931
+    'BL', '0436', 'A266', 254.51, 5931
   ), 
   (
     25017, 'Danta di Cadore', 'Veneto', 
-    'Bl', '0435', 'D247', 8, 502
+    'BL', '0435', 'D247', 8, 502
   ), 
   (
     25018, 'Domegge di Cadore', 'Veneto', 
-    'Bl', '0435', 'D330', 50.39, 2543
+    'BL', '0435', 'D330', 50.39, 2543
   ), 
   (
-    25019, 'Falcade', 'Veneto', 'Bl', '0437', 
+    25019, 'Falcade', 'Veneto', 'BL', '0437', 
     'D470', 53.15, 2046
   ), 
   (
-    25021, 'Feltre', 'Veneto', 'Bl', '0439', 
+    25021, 'Feltre', 'Veneto', 'BL', '0439', 
     'D530', 100.6, 20741
   ), 
   (
-    25022, 'Fonzaso', 'Veneto', 'Bl', '0439', 
+    25022, 'Fonzaso', 'Veneto', 'BL', '0439', 
     'D686', 27.49, 3286
   ), 
   (
     25023, 'Canale d''Agordo', 'Veneto', 
-    'Bl', '0437', 'B574', 46.1, 1156
+    'BL', '0437', 'B574', 46.1, 1156
   ), 
   (
-    25025, 'Gosaldo', 'Veneto', 'Bl', '0437', 
+    25025, 'Gosaldo', 'Veneto', 'BL', '0437', 
     'E113', 48.85, 689
   ), 
   (
-    25026, 'Lamon', 'Veneto', 'Bl', '0439', 
+    25026, 'Lamon', 'Veneto', 'BL', '0439', 
     'E429', 54.35, 2997
   ), 
   (
     25027, 'La Valle Agordina', 'Veneto', 
-    'Bl', '0437', 'E490', 48.66, 1139
+    'BL', '0437', 'E490', 48.66, 1139
   ), 
   (
-    25028, 'Lentiai', 'Veneto', 'Bl', '0437', 
+    25028, 'Lentiai', 'Veneto', 'BL', '0437', 
     'C562', 37.61, 3017
   ), 
   (
-    25029, 'Limana', 'Veneto', 'Bl', '0437', 
+    25029, 'Limana', 'Veneto', 'BL', '0437', 
     'E588', 39.17, 5124
   ), 
   (
     25030, 'Livinallongo del Col di Lana', 
-    'Veneto', 'Bl', '0436', 'E622', 99.12, 
+    'Veneto', 'BL', '0436', 'E622', 99.12, 
     1364
   ), 
   (
     25032, 'Lorenzago di Cadore', 'Veneto', 
-    'Bl', '0435', 'E687', 27.63, 556
+    'BL', '0435', 'E687', 27.63, 556
   ), 
   (
     25033, 'Lozzo di Cadore', 'Veneto', 
-    'Bl', '0435', 'E708', 30.38, 1485
+    'BL', '0435', 'E708', 30.38, 1485
   ), 
   (
-    25034, 'Mel', 'Veneto', 'Bl', '0437', 
+    25034, 'Mel', 'Veneto', 'BL', '0437', 
     'F094', 85.72, 6078
   ), 
   (
     25035, 'Ospitale di Cadore', 'Veneto', 
-    'Bl', '0437', 'G169', 40.11, 315
+    'BL', '0437', 'G169', 40.11, 315
   ), 
   (
-    25036, 'Pedavena', 'Veneto', 'Bl', 
+    25036, 'Pedavena', 'Veneto', 'BL', 
     '0439', 'G404', 24.91, 4435
   ), 
   (
     25037, 'Perarolo di Cadore', 'Veneto', 
-    'Bl', '0435', 'G442', 43.42, 376
+    'BL', '0435', 'G442', 43.42, 376
   ), 
   (
     25039, 'Pieve di Cadore', 'Veneto', 
-    'Bl', '0435', 'G642', 66.59, 3956
+    'BL', '0435', 'G642', 66.59, 3956
   ), 
   (
     25040, 'Ponte nelle Alpi', 'Veneto', 
-    'Bl', '0437', 'B662', 57.98, 8382
+    'BL', '0437', 'B662', 57.98, 8382
   ), 
   (
     25043, 'Rivamonte Agordino', 'Veneto', 
-    'Bl', '0437', 'H327', 23.21, 652
+    'BL', '0437', 'H327', 23.21, 652
   ), 
   (
     25044, 'Rocca Pietore', 'Veneto', 
-    'Bl', '0437', 'H379', 76.01, 1319
+    'BL', '0437', 'H379', 76.01, 1319
   ), 
   (
     25045, 'San Gregorio nelle Alpi', 
-    'Veneto', 'Bl', '0437', 'H938', 18.95, 
+    'Veneto', 'BL', '0437', 'H938', 18.95, 
     1610
   ), 
   (
     25046, 'San Nicolò di Comelico', 
-    'Veneto', 'Bl', '0435', 'I063', 24.36, 
+    'Veneto', 'BL', '0435', 'I063', 24.36, 
     407
   ), 
   (
     25047, 'San Pietro di Cadore', 'Veneto', 
-    'Bl', '0435', 'I088', 52.33, 1655
+    'BL', '0435', 'I088', 52.33, 1655
   ), 
   (
     25048, 'Santa Giustina', 'Veneto', 
-    'Bl', '0437', 'I206', 35.87, 6774
+    'BL', '0437', 'I206', 35.87, 6774
   ), 
   (
     25049, 'San Tomaso Agordino', 'Veneto', 
-    'Bl', '0437', 'I347', 19.15, 670
+    'BL', '0437', 'I347', 19.15, 670
   ), 
   (
     25050, 'Santo Stefano di Cadore', 
-    'Veneto', 'Bl', '0435', 'C919', 100.16, 
+    'Veneto', 'BL', '0435', 'C919', 100.16, 
     2657
   ), 
   (
     25051, 'San Vito di Cadore', 'Veneto', 
-    'Bl', '0436', 'I392', 61.61, 1795
+    'BL', '0436', 'I392', 61.61, 1795
   ), 
   (
-    25053, 'Sedico', 'Veneto', 'Bl', '0437', 
+    25053, 'Sedico', 'Veneto', 'BL', '0437', 
     'I563', 91.44, 9980
   ), 
   (
     25054, 'Selva di Cadore', 'Veneto', 
-    'Bl', '0437', 'I592', 33.2, 516
+    'BL', '0437', 'I592', 33.2, 516
   ), 
   (
     25055, 'Seren del Grappa', 'Veneto', 
-    'Bl', '0439', 'I626', 62.41, 2552
+    'BL', '0439', 'I626', 62.41, 2552
   ), 
   (
-    25056, 'Sospirolo', 'Veneto', 'Bl', 
+    25056, 'Sospirolo', 'Veneto', 'BL', 
     '0437', 'I866', 65.97, 3223
   ), 
   (
-    25057, 'Soverzene', 'Veneto', 'Bl', 
+    25057, 'Soverzene', 'Veneto', 'BL', 
     '0437', 'I876', 14.74, 411
   ), 
   (
-    25058, 'Sovramonte', 'Veneto', 'Bl', 
+    25058, 'Sovramonte', 'Veneto', 'BL', 
     '0439', 'I673', 50.84, 1483
   ), 
   (
     25059, 'Taibon Agordino', 'Veneto', 
-    'Bl', '0437', 'L030', 90.19, 1791
+    'BL', '0437', 'L030', 90.19, 1791
   ), 
   (
-    25060, 'Tambre', 'Veneto', 'Bl', '0437', 
+    25060, 'Tambre', 'Veneto', 'BL', '0437', 
     'L040', 45.6, 1438
   ), 
   (
-    25061, 'Trichiana', 'Veneto', 'Bl', 
+    25061, 'Trichiana', 'Veneto', 'BL', 
     '0437', 'L422', 43.82, 4877
   ), 
   (
     25062, 'Vallada Agordina', 'Veneto', 
-    'Bl', '0437', 'L584', 13.18, 503
+    'BL', '0437', 'L584', 13.18, 503
   ), 
   (
     25063, 'Valle di Cadore', 'Veneto', 
-    'Bl', '0435', 'L590', 41.32, 2032
+    'BL', '0435', 'L590', 41.32, 2032
   ), 
   (
     25065, 'Vigo di Cadore', 'Veneto', 
-    'Bl', '0435', 'L890', 70.7, 1480
+    'BL', '0435', 'L890', 70.7, 1480
   ), 
   (
-    25066, 'Vodo Cadore', 'Veneto', 'Bl', 
+    25066, 'Vodo Cadore', 'Veneto', 'BL', 
     '0435', 'M108', 46.89, 898
   ), 
   (
     25067, 'Voltago Agordino', 'Veneto', 
-    'Bl', '0437', 'M124', 23.02, 895
+    'BL', '0437', 'M124', 23.02, 895
   ), 
   (
     25069, 'Zoppè di Cadore', 'Veneto', 
-    'Bl', '0437', 'M189', 4.44, 252
+    'BL', '0437', 'M189', 4.44, 252
   ), 
   (
-    25070, 'Quero Vas', 'Veneto', 'Bl', 
+    25070, 'Quero Vas', 'Veneto', 'BL', 
     '0439', 'M332', 46.01, 3371
   ), 
   (
-    25071, 'Longarone', 'Veneto', 'Bl', 
+    25071, 'Longarone', 'Veneto', 'BL', 
     '0437', 'M342', 122.18, 5485
   ), 
   (
-    25072, 'Alpago', 'Veneto', 'Bl', '0437', 
+    25072, 'Alpago', 'Veneto', 'BL', '0437', 
     'M375', 80.34, 7071
   ), 
   (
-    25073, 'Val di Zoldo', 'Veneto', 'Bl', 
+    25073, 'Val di Zoldo', 'Veneto', 'BL', 
     '0437', 'M374', 141.65, 3285
   ), 
   (

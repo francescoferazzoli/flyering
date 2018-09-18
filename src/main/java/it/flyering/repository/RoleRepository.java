@@ -5,8 +5,8 @@ import org.springframework.stereotype.Repository;
 
 import it.flyering.dao.RoleDAO;
 
-@Repository("roleRepository")
-public interface RoleRepository extends JpaRepository<RoleDAO, Integer>{
+@Repository
+public interface RoleRepository extends JpaRepository<RoleDAO, Integer> {
 	RoleDAO findByRole(String role);
 
 }

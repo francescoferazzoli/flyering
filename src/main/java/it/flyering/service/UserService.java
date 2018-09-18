@@ -12,7 +12,7 @@ import it.flyering.dao.UserDAO;
 import it.flyering.repository.RoleRepository;
 import it.flyering.repository.UserRepository;
 
-@Service("userService")
+@Service
 public class UserService {
 
 	@Autowired

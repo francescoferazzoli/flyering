@@ -72,7 +72,8 @@ CREATE TABLE italy_provincies (
   residenti int DEFAULT NULL, 
   num_comuni int DEFAULT NULL, 
   id_regione smallint DEFAULT NULL, 
-  PRIMARY KEY (sigla)
+  PRIMARY KEY (sigla),
+  CONSTRAINT italy_provincies_to_italy_regions FOREIGN KEY (id_regione) REFERENCES italy_regions (id_regione)
 );
 --
 -- Table structure for table `italy_cities` (https://github.com/MatteoHenryChinaski/Comuni-Italiani-2018-Sql-Json-excel)
@@ -88,15 +89,21 @@ CREATE TABLE italy_cities (
   cod_fisco varchar(10) DEFAULT NULL, 
   superficie double precision DEFAULT NULL, 
   num_residenti int DEFAULT NULL, 
-  PRIMARY KEY (istat)
+  PRIMARY KEY (istat),
+  CONSTRAINT italy_cities_to_italy_provincies FOREIGN KEY (provincia) REFERENCES italy_provincies (sigla)
 );
 --
 -- Table structure for table `italy_cap` (https://github.com/MatteoHenryChinaski/Comuni-Italiani-2018-Sql-Json-excel)
 --
 DROP 
   TABLE IF EXISTS italy_cap;
+ DROP 
+  SEQUENCE IF EXISTS cap_seq;
+CREATE SEQUENCE cap_seq;
 CREATE TABLE italy_cap (
+  cap_id int NOT NULL DEFAULT NEXTVAL ('cap_seq'), 
   istat int NOT NULL, 
-  cap char(11) DEFAULT NULL, 
-  PRIMARY KEY (istat)
+  cap char(5) DEFAULT NULL, 
+  PRIMARY KEY (cap_id),
+  CONSTRAINT italy_cap_to_italy_cities FOREIGN KEY (istat) REFERENCES italy_cities (istat)
 );

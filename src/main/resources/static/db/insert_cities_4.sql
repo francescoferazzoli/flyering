@@ -5641,91 +5641,91 @@ VALUES
   ), 
   (
     85001, 'Acquaviva Platani', 'Sicilia', 
-    'Cl', '0934', 'A049', 14.72, 1018
+    'CL', '0934', 'A049', 14.72, 1018
   ), 
   (
-    85002, 'Bompensiere', 'Sicilia', 'Cl', 
+    85002, 'Bompensiere', 'Sicilia', 'CL', 
     '0934', 'A957', 19.73, 608
   ), 
   (
-    85003, 'Butera', 'Sicilia', 'Cl', '0934', 
+    85003, 'Butera', 'Sicilia', 'CL', '0934', 
     'B302', 297.09, 4931
   ), 
   (
     85004, 'Caltanissetta', 'Sicilia', 
-    'Cl', '0934', 'B429', 417.22, 61651
+    'CL', '0934', 'B429', 417.22, 61651
   ), 
   (
-    85005, 'Campofranco', 'Sicilia', 'Cl', 
+    85005, 'Campofranco', 'Sicilia', 'CL', 
     '0934', 'B537', 36.05, 3191
   ), 
   (
-    85006, 'Delia', 'Sicilia', 'Cl', '0922', 
+    85006, 'Delia', 'Sicilia', 'CL', '0922', 
     'D267', 12.31, 4360
   ), 
   (
-    85007, 'Gela', 'Sicilia', 'Cl', '0933', 
+    85007, 'Gela', 'Sicilia', 'CL', '0933', 
     'D960', 277.31, 75618
   ), 
   (
-    85008, 'Marianopoli', 'Sicilia', 'Cl', 
+    85008, 'Marianopoli', 'Sicilia', 'CL', 
     '0934', 'E953', 12.95, 1976
   ), 
   (
-    85009, 'Mazzarino', 'Sicilia', 'Cl', 
+    85009, 'Mazzarino', 'Sicilia', 'CL', 
     '0934', 'F065', 293.96, 12236
   ), 
   (
-    85010, 'Milena', 'Sicilia', 'Cl', '0934', 
+    85010, 'Milena', 'Sicilia', 'CL', '0934', 
     'E618', 24.55, 3151
   ), 
   (
-    85011, 'Montedoro', 'Sicilia', 'Cl', 
+    85011, 'Montedoro', 'Sicilia', 'CL', 
     '0934', 'F489', 14.13, 1601
   ), 
   (
-    85012, 'Mussomeli', 'Sicilia', 'Cl', 
+    85012, 'Mussomeli', 'Sicilia', 'CL', 
     '0934', 'F830', 163.91, 10960
   ), 
   (
-    85013, 'Niscemi', 'Sicilia', 'Cl', 
+    85013, 'Niscemi', 'Sicilia', 'CL', 
     '0933', 'F899', 96.53, 27936
   ), 
   (
-    85014, 'Resuttano', 'Sicilia', 'Cl', 
+    85014, 'Resuttano', 'Sicilia', 'CL', 
     '0934', 'H245', 38.24, 2126
   ), 
   (
-    85015, 'Riesi', 'Sicilia', 'Cl', '0934', 
+    85015, 'Riesi', 'Sicilia', 'CL', '0934', 
     'H281', 66.67, 11676
   ), 
   (
-    85016, 'San Cataldo', 'Sicilia', 'Cl', 
+    85016, 'San Cataldo', 'Sicilia', 'CL', 
     '0934', 'H792', 75.09, 23603
   ), 
   (
     85017, 'Santa Caterina Villarmosa', 
-    'Sicilia', 'Cl', '0934', 'I169', 75.61, 
+    'Sicilia', 'CL', '0934', 'I169', 75.61, 
     5659
   ), 
   (
     85018, 'Serradifalco', 'Sicilia', 
-    'Cl', '0934', 'I644', 41.58, 6204
+    'CL', '0934', 'I644', 41.58, 6204
   ), 
   (
-    85019, 'Sommatino', 'Sicilia', 'Cl', 
+    85019, 'Sommatino', 'Sicilia', 'CL', 
     '0922', 'I824', 34.67, 7253
   ), 
   (
-    85020, 'Sutera', 'Sicilia', 'Cl', '0934', 
+    85020, 'Sutera', 'Sicilia', 'CL', '0934', 
     'L016', 35.53, 1418
   ), 
   (
     85021, 'Vallelunga Pratameno', 'Sicilia', 
-    'Cl', '0934', 'L609', 39.15, 3592
+    'CL', '0934', 'L609', 39.15, 3592
   ), 
   (
-    85022, 'Villalba', 'Sicilia', 'Cl', 
+    85022, 'Villalba', 'Sicilia', 'CL', 
     '0934', 'L959', 41.45, 1690
   ), 
   (
