@@ -16,7 +16,6 @@ import javax.persistence.Table;
 import org.springframework.data.annotation.Transient;
 
 import lombok.Data;
-import lombok.ToString;
 
 @Entity
 @Table(name = "users")
